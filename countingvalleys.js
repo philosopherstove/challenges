@@ -1,5 +1,7 @@
 /*
-HackerRank - warmup
+HackerRank
+Interview Preparation Kit
+Warm-up Challenges
 Counting Valleys
 ----------------
 
