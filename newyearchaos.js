@@ -55,7 +55,7 @@ let solve = (input)=>{
                 moversTally[a] = 0;
             };
             moversTally[a]++;
-            if(moversTally[a] === 3){
+            if( moversTally[a] === 3){
                 return "Too chaotic";
             };
         };
@@ -67,7 +67,7 @@ let solve = (input)=>{
                 moversTally[c] = 0;
             };
             moversTally[c]++;
-            if(moversTally[c] === 3){
+            if( moversTally[c] === 3){
                 return "Too chaotic";
             };
         };
@@ -85,7 +85,7 @@ let solve = (input)=>{
                         moversTally[a] = 0;
                     };
                     moversTally[a]++;
-                    if(moversTally[a] === 3){
+                    if( moversTally[a] === 3){
                         return "Too chaotic";
                     };
                 };
@@ -97,7 +97,7 @@ let solve = (input)=>{
                         moversTally[c] = 0;
                     };
                     moversTally[c]++;
-                    if(moversTally[c] === 3){
+                    if( moversTally[c] === 3){
                         return "Too chaotic";
                     };
                 };
