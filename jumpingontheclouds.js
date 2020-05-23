@@ -1,7 +1,6 @@
 /*
 HackerRank
-Interview Preparation Kit
-Warm-up Challenges
+Easy
 Jumping on the Clouds
 ---------------------
 
@@ -64,12 +63,11 @@ let solve = (input)=>{
             i += 2;
         };
         if( i >= input.length - 1){
-            console.log(moves);
             return moves;
         };
     };
 };
 
-solve(input);
-solve(input2);
-solve(input3)
+console.log( solve(input)  );
+console.log( solve(input2) );
+console.log( solve(input3) )

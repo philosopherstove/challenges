@@ -1,7 +1,6 @@
 /*
 HackerRank
-Interview Preparation Kit
-Arrays
+Medium (Hard)
 New Year Chaos
 --------------
 

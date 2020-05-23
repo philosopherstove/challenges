@@ -1,7 +1,6 @@
 /*
 HackerRank
-Interview Preparation Kit
-Arrays
+easy (Medium)
 2D Array - DS
 -------------
 

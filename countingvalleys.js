@@ -1,7 +1,6 @@
 /*
 HackerRank
-Interview Preparation Kit
-Warm-up Challenges
+Easy
 Counting Valleys
 ----------------
 
