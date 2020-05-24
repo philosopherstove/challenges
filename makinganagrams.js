@@ -67,11 +67,11 @@ let solve = (input)=>{
         };
     };
     for(let x in objA){
-        if(objB.hasOwnProperty(x) === false){
+        if( objB.hasOwnProperty(x) === false){
             let numOfExcluded = objA[x];
             cuts += numOfExcluded;
         };
-        if(objB.hasOwnProperty(x)){
+        if( objB.hasOwnProperty(x)){
             let diff = objA[x] - objB[x];
             if( diff < 0){
                 diff = -1 * diff;
@@ -80,7 +80,7 @@ let solve = (input)=>{
         };
     };
     for(let x in objB){
-        if(objA.hasOwnProperty(x) === false){
+        if( objA.hasOwnProperty(x) === false){
             let numOfExcluded = objB[x];
             cuts += numOfExcluded;
         };

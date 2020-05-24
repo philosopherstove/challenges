@@ -42,7 +42,7 @@ let createSockTally = (input)=>{
                 obj[sock] = 0;
             }
             obj[sock]++;
-            if(i === input.length - 1){
+            if( i === input.length - 1){
                 resolve(obj);
             };
         };
@@ -57,7 +57,7 @@ let determineNumberOfPairs = (sockTally)=>{
             let numberOfSocks = sockTally[key];
             let numberOfPairs = Math.floor(numberOfSocks / 2);
             pairs += numberOfPairs;
-            if(i === Object.keys(sockTally).length - 1){
+            if( i === Object.keys(sockTally).length - 1){
                 resolve(pairs);
             };
         };

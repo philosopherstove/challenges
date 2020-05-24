@@ -30,7 +30,7 @@ let createTallyObj = (input)=>{
             else{
                 obj[lower]--;
             };
-            if(i === input.length - 1){
+            if( i === input.length - 1){
                 resolve(obj);
             };
         };
@@ -45,7 +45,7 @@ let toTallyArray = async(tallyObj)=>{
             let value  = tallyObj[key];
             let packet = [key, value];
             tallyArray.push(packet);
-            if(i === Object.keys(tallyObj).length - 1){
+            if( i === Object.keys(tallyObj).length - 1){
                 resolve(tallyArray);
             };
         };
@@ -58,7 +58,7 @@ let logDesiredOutput = (tallyArray, input)=>{
         let key   = tallyArray[i][0];
         let value = tallyArray[i][1];
         output += `${key}:${value} `;
-        if(i === tallyArray.length - 1){
+        if( i === tallyArray.length - 1){
             console.log(`input: ${input}`);
             console.log(`result: ${output}`);
         };
@@ -70,21 +70,21 @@ let solve = async(input)=>{
     let tallyArray = await toTallyArray(tallyObj);
     tallyArray.sort((a,b)=>{
         let comparison = 0;
-        if(a[1] < b[1]){
+        if( a[1] < b[1]){
             comparison = 1;
         }
         else
-        if(a[1] > b[1]){
+        if( a[1] > b[1]){
             comparison = -1;
             cnt--;
         }
         else
-        if(a[1] === b[1]){
-            if(a > b){
+        if( a[1] === b[1]){
+            if( a > b){
                 comparison = 1;
             }
             else
-            if(a < b){
+            if( a < b){
                 comparison = -1;
             };
         };
