@@ -1,6 +1,6 @@
 /*
 HackerRank
-easy (Medium)
+Easy (Medium)
 2D Array - DS
 -------------
 
