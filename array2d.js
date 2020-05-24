@@ -92,7 +92,7 @@ let solve = (input)=>{
         /* collect */
         hourglasses.push(sum);
         /* increment control/row switching */
-        if(i % rowLimit === 0){
+        if( i % rowLimit === 0){
             a++;
             b = 0;
         }
@@ -100,7 +100,7 @@ let solve = (input)=>{
             b++;
         };
         /* end of loop, give result */
-        if(i === 16){
+        if( i === 16){
             let result = Math.max.apply(null, hourglasses);
             return result;
         };
