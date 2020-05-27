@@ -1,7 +1,7 @@
 /*
 HackerRank
-Medium (Hard)
 Sherlock and the Valid String
+Medium (Hard)
 -----------------------------
 
 Sherlock considers a string to be valid if all characters of the string appear the same number of times.

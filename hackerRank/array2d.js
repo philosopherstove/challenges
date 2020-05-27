@@ -1,7 +1,7 @@
 /*
 HackerRank
-Easy (Medium)
 2D Array - DS
+Easy (Medium)
 -------------
 
 Given a 6 x 6 2D Array, arr:

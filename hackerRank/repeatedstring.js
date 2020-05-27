@@ -1,7 +1,7 @@
 /*
 HackerRank
-Easy (Medium)
 Repeated String
+Easy (Medium)
 ---------------
 
 Lilah has a string of lowercase English letters that she repeated infinitely many times.

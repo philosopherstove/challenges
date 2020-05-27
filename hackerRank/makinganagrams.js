@@ -1,7 +1,7 @@
 /*
 HackerRank
-Easy
 Making Anagrams
+Easy (Easy)
 ---------------
 
 Alice is taking a cryptography class and finding anagrams to be very useful.

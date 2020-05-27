@@ -1,7 +1,7 @@
 /*
 HackerRank
-Medium (Hard)
 New Year Chaos
+Medium (Hard)
 --------------
 
 It's New Year's Day and everyone's in line for the Wonderland rollercoaster ride!

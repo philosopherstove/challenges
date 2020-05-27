@@ -1,7 +1,7 @@
 /*
 HackerRank
-Easy
 Jumping on the Clouds
+Easy (Easy)
 ---------------------
 
 Emma is playing a new mobile game that starts with consecutively numbered clouds.

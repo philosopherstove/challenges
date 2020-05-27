@@ -1,7 +1,7 @@
 /*
 HackerRank
-Easy
 Alternating Characters
+Easy (Easy)
 ----------------------
 
 You are given a string containing characters 'A' and 'B' only.
