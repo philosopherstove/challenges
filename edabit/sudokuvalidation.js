@@ -37,6 +37,77 @@ sudokuValidator([
 ]) ➞ false
 */
 
+
+let solve = (input)=>{
+    /* check columns */
+    let columns = {};
+    for(let i = 0; i < input.length; i++){
+        let row = input[i];
+        for(let r = 0; r < row.length; r++){
+            let num = row[r].toString();
+            if( columns.hasOwnProperty(r) === false){
+                columns[r] = [num];
+            }
+            else{
+                columns[r].push(num);
+            };
+        };
+    };
+    let checkColumns = true;
+    Object.keys(columns).forEach((key)=>{
+        let column = columns[key].slice();
+            column.sort();
+        for(let i = 0; i < column.length; i++){
+            let num = Number(column[i]);
+            if( num !== i+1){
+                checkColumns = false;
+                return;
+            };
+        };
+    });
+    if( checkColumns === false){
+        return false;
+    };
+    /* check rows */
+    for(let i = 0; i < input.length; i++){
+        let row    = input[i].slice();
+            row.sort();
+        for(let r = 0; r < row.length; r++){
+            let num = row[r];
+            if( num !== r+1){
+                return false;
+            };
+        };
+    };
+    let x        = 0;
+    let y        = 0;
+    let rowLimit = 3;
+    /* check blocks */
+    for(let i = 1; i <= 9; i++){
+        let block = [
+            input[y][x],   input[y][x+1],   input[y][x+2],
+            input[y+1][x], input[y+1][x+1], input[y+1][x+2],
+            input[y+2][x], input[y+2][x+1], input[y+2][x+2]
+        ];
+        block.sort();
+        for(let b = 0; b < block.length; b++){
+            let num = block[b];
+            if( num !== b+1){
+                return false;
+            };
+        };
+        if( i % rowLimit === 0){
+            y += 3;
+            x = 0;
+        }
+        else{
+            x += 3;
+        };
+    };
+    return true;
+};
+
+
 let input  = [ // false
     [ 1, 5, 2, 4, 8, 9, 3, 7, 6 ],
     [ 7, 3, 9, 2, 5, 6, 8, 4, 1 ],
@@ -147,75 +218,6 @@ let input10 = [ // false
     [ 2, 8, 7, 4, 1, 9, 6, 3, 5 ],
     [ 3, 4, 5, 2, 8, 6, 1, 7, 9 ]
 ];
-
-let solve = (input)=>{
-    /* check columns */
-    let columns = {};
-    for(let i = 0; i < input.length; i++){
-        let row = input[i];
-        for(let r = 0; r < row.length; r++){
-            let num = row[r].toString();
-            if( columns.hasOwnProperty(r) === false){
-                columns[r] = [num];
-            }
-            else{
-                columns[r].push(num);
-            };
-        };
-    };
-    let checkColumns = true;
-    Object.keys(columns).forEach((key)=>{
-        let column = columns[key].slice();
-            column.sort();
-        for(let i = 0; i < column.length; i++){
-            let num = Number(column[i]);
-            if( num !== i+1){
-                checkColumns = false;
-                return;
-            };
-        };
-    });
-    if( checkColumns === false){
-        return false;
-    };
-    /* check rows */
-    for(let i = 0; i < input.length; i++){
-        let row    = input[i].slice();
-            row.sort();
-        for(let r = 0; r < row.length; r++){
-            let num = row[r];
-            if( num !== r+1){
-                return false;
-            };
-        };
-    };
-    let x        = 0;
-    let y        = 0;
-    let rowLimit = 3;
-    /* check blocks */
-    for(let i = 1; i <= 9; i++){
-        let block = [
-            input[y][x],   input[y][x+1],   input[y][x+2],
-            input[y+1][x], input[y+1][x+1], input[y+1][x+2],
-            input[y+2][x], input[y+2][x+1], input[y+2][x+2]
-        ];
-        block.sort();
-        for(let b = 0; b < block.length; b++){
-            let num = block[b];
-            if( num !== b+1){
-                return false;
-            };
-        };
-        if( i % rowLimit === 0){
-            y += 3;
-            x = 0;
-        }
-        else{
-            x += 3;
-        };
-    };
-    return true;
-};
 
 console.log( solve(input)  ); // false
 console.log( solve(input2) ); // true
