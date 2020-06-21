@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-width: 320px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+.wrap{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-top: 150px;
+  padding: 34px 0;
+  background-color: #ffffff;
+}
+header{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.card{
+  min-width: 320px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.card > p{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card div{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.answer{
+  text-align: center;
+  font-size: 18px;
+  width: 50px;
+}
+.card input{
+  margin-top: 4px;
+  margin-left: 10px;
+}
+#enterButton{
+  min-width: 160px;
+  max-width: 200px;
+  margin: 20px auto 0;
+}
+#helpButton{
+  min-width: 160px;
+  max-width: 200px;
+  margin: 0 auto;
+  margin: 10px auto 0;
+}
+#restartButton{
+  min-width: 160px;
+  max-width: 200px;
+  margin: 10px auto 10px;
+}
+#scoreboard{
+    text-align: center;
+    font-family: arial;
+    font-size: 34px;
+}
